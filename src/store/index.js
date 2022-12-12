@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { createStore, compose, applyMiddleware } from 'react-redux';
+import { createStore, compose, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 
 import { rootReducer } from './root-reducer';
