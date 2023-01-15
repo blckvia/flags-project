@@ -1,3 +1,4 @@
+import { CLEAR_CONTROLS } from '../controls/control-actions';
 import { SET_COUNTRIES, SET_ERROR, SET_LOADING } from './countries-actions';
 
 const initialState = {
@@ -26,6 +27,8 @@ export const countriesReducer = (state = initialState, { type, payload }) => {
                 status: 'received',
                 list: payload,
             };
+        case CLEAR_CONTROLS:
+            return initialState;
         default:
             return state;
     }
