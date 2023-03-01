@@ -1,11 +1,10 @@
 import styled from 'styled-components';
 
 import { Link } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
 
 import { Container } from './Container';
-import { clearControls } from '../store/controls/control-actions';
 import { ThemeSwitcher } from '../features/ThemeSwitcher';
+import { useCleanup } from '../features/controls/use-cleanup';
 
 const HeaderEl = styled.header`
   box-shadow: var(--shadow);
@@ -29,8 +28,7 @@ const Title = styled(Link).attrs({
 `;
 
 export const Header = () => {
-  const dispatch = useDispatch();
-  const cleanUp = () => dispatch(clearControls());
+  const cleanUp = useCleanup();
 
   return (
     <HeaderEl>
