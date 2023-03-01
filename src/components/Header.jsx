@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 import { Container } from './Container';
-import { ThemeSwitcher } from '../features/ThemeSwitcher';
+import { ThemeSwitcher } from '../features/theme/ThemeSwitcher';
 import { useCleanup } from '../features/controls/use-cleanup';
 
 const HeaderEl = styled.header`

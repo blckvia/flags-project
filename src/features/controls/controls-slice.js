@@ -13,9 +13,9 @@ const conrtolsSlice = createSlice({
       state.search = action.payload;
     },
     serRegion: (state, action) => {
-      state.search = action.payload;
+      state.region = action.payload;
     },
-    clearControls: (state, action) => initialState,
+    clearControls: () => initialState,
   },
 });
 

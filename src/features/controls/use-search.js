@@ -1,6 +1,5 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { selectSearch } from '../../store/controls/control-selector';
-import { setSearch } from '../../store/controls/control-actions';
+import { selectSearch, setSearch } from './controls-slice';
 
 export const useSearch = () => {
   const dispatch = useDispatch();
